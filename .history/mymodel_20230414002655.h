@@ -21,7 +21,7 @@ typedef struct
 } POLY4;
 
 /* create a spherical object */
-SPHERE obj1 = {1.0, 1.0, 1.0, /* center of the circle */
+SPHERE obj1 = {0.0, 1.0, 0.0, /* center of the circle */
 							 1.0,						/* radius of the circle */
 							 0.75};					/* diffuse reflection coefficient */
 
@@ -49,7 +49,7 @@ float xmax = 0.0175;
 float ymax = -0.0175;
 
 /* definition of the camera parameters */
-float VRP[3] = {1.0, 2.0, 3.5};
+float VRP[3] = {1.0, 10.0, 15.5};
 float VPN[3] = {0.0, -1.0, -2.5};
 float VUP[3] = {0.0, 1.0, 0.0};
 
@@ -58,10 +58,10 @@ float VUP[3] = {0.0, 1.0, 0.0};
 // float VPN[3] = {1.0, 10.0, -50.0};
 // float VUP[3] = {0.0, 1.0, 0.0};
 
-float focal = 0.028; /* focal length simulating 50 mm lens */
+float focal = 0.05; /* focal length simulating 50 mm lens */
 
 /* definition of light source */
-float LPR[3] = {5.0, 5.0, 3.5}; /* light position */
+float LPR[3] = {2.0, 2.0, 2.0}; /* light position */
 float Ip = 200.0;								/* intensity of the point light source */
 
 /* Transformation from the world to the camera coordinates */

@@ -22,7 +22,7 @@ typedef struct
 
 /* create a spherical object */
 SPHERE obj1 = {1.0, 1.0, 1.0, /* center of the circle */
-							 1.0,						/* radius of the circle */
+							 2.0,						/* radius of the circle */
 							 0.75};					/* diffuse reflection coefficient */
 
 /* create a polygon object */
@@ -61,8 +61,8 @@ float VUP[3] = {0.0, 1.0, 0.0};
 float focal = 0.028; /* focal length simulating 50 mm lens */
 
 /* definition of light source */
-float LPR[3] = {5.0, 5.0, 3.5}; /* light position */
-float Ip = 200.0;								/* intensity of the point light source */
+float LPR[3] = {10.0, 5.0, 3.5}; /* light position */
+float Ip = 200.0;								 /* intensity of the point light source */
 
 /* Transformation from the world to the camera coordinates */
 float Mwc[4][4] = {1.0, 0.0, 0.0, 0.0,
